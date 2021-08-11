@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xypo.com</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
 <body>
@@ -36,12 +37,12 @@
         <section>
             <nav id="sideNav">
                 <ul>
-                    <li> <a href="#">Home</a> </li>
-                    <li> <a href="#">About US</a> </li>
-                    <li> <a href="#">Featuers</a> </li>
-                    <li> <a href="#">Courses</a> </li>
-                    <li> <a href="#"> Offer</a> </li>
-                    <li> <a href="#">Conatct </a> </li>
+                    <li> <a href="#bg-image-1">Home</a> </li>
+                    <li> <a href="#about">About US</a> </li>
+                    <li> <a href="#featuers">Featuers</a> </li>
+                    <li> <a href="#courses">Courses</a> </li>
+                    <li> <a href="#offer"> Offer</a> </li>
+                    <li> <a href="#contact">Conatct </a> </li>
 
                 </ul>
             </nav>
@@ -236,6 +237,17 @@
             </div>
         </section>
     </footer>
+<!-- soccial icones -->
+
+<div class="social-icons">
+    <img src="images/facebook.png" alt="">
+    <img src="images/instagram.png" alt="">
+    <img src="images/linkedin.png" alt="">
+    <img src="images/twitter.png" alt="">
+</div>
+
+
+
     <script>
         var menuBtn = document.getElementById("menuBtn");
         var sideNav = document.getElementById("sideNav");
@@ -249,6 +261,14 @@
                 sideNav.style.right = "-250px";
             }
         }
+
+    
+    </script>
+    
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+        {speed: 500,
+	speedAsDuration = true};
     </script>
 </body>
 
